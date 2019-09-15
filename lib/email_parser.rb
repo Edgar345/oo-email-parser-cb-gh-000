@@ -15,5 +15,6 @@ class EmailAddressParser
   def parse
     includes_comma = @email_addresses.include?(",")
     pattern = includes_comma ? "," : " "
+    @email_addresses.split(pattern).uniq
   end
 end
