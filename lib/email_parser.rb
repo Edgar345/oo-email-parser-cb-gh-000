@@ -13,8 +13,6 @@ class EmailAddressParser
 
 
   def parse
-    includes_comma = @email_addresses.include?(",")
-    pattern = includes_comma ? ", " : " "
-    @email_addresses.split(pattern).uniq
+    @email_addresses.scan(/\w+@\w+\.com/).uniq
   end
 end
