@@ -13,6 +13,6 @@ class EmailAddressParser
 
 
   def parse
-
+    includes_comma? = @email_addresses.include(",")
   end
 end
