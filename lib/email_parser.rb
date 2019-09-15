@@ -5,5 +5,6 @@
 # match, scan(string methods), grep
 
 class EmailAddressParser
-
+  def initialize email_addresses
+  end
 end
